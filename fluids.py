@@ -3,7 +3,7 @@ import numpy as np
 import math
 
 
-def initialize_project(N=50, M=10, r_shroud = 0.5, r_hub = 0.45, rpm = 6000, rho_inlet = 1.5, T_inlet =288, m = 30.4, dx = 0.005, dr = 0.005, rC_theta_1 = 39.3, rC_theta_2 = 117.8):
+def initialize_project(N=51, M=11, r_shroud = 0.5, r_hub = 0.45, rpm = 6000, rho_inlet = 1.5, T_inlet =288, m = 30.4, dx = 0.005, dr = 0.005, rC_theta_1 = 39.3, rC_theta_2 = 117.8):
     # Define grid size and geometry markers
     
     A_inlet = math.pi*(r_shroud**2 - r_hub**2)
@@ -11,8 +11,8 @@ def initialize_project(N=50, M=10, r_shroud = 0.5, r_hub = 0.45, rpm = 6000, rho
     params = {
       "N": N,
       "M": M,
-      "i_LE": 2*M,  # Rotor leading edge station index
-      "i_TE": (3*M),  # Rotor trailing edge station index
+      "i_LE": 2*(M-1),  # Rotor leading edge station index
+      "i_TE": (3*(M-1)),  # Rotor trailing edge station index
       "r": np.linspace(r_shroud, r_hub, M),  # Radial coordinates from hub to casing
       "Omega": rpm*math.pi/30,  # Rotational speed (rad/s)
       "cp": 1005,  # Specific heat
