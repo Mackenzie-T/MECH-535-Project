@@ -38,4 +38,4 @@ def get_te_tables():
     print_te_table("Part 2: Incompressible Lossless", params, fields_incomp)
 
 
-#get_te_tables()
+get_te_tables()
