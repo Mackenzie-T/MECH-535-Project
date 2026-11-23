@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 # (field key, label, file name) for the fields worth showing in the report.
 REPORT_FIELDS = [
     ("CR", r"Radial velocity $C_r$ [m/s]", "radial_velocity"),
+    ("CZ", r"Axial velocity $C_z$ [m/s]", "axial_velocity"),
     ("CU", r"Whirl velocity $C_\theta$ [m/s]", "tangential_velocity"),
     ("DENSITY", r"Density $\rho$ [kg/m$^3$]", "density"),
     ("ENTROPY", r"Entropy $s$ [J/kg/K]", "entropy"),
