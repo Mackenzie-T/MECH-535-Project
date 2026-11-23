@@ -218,3 +218,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project: generated outputs (recreate by running the scripts)
+heatmaps/
+*.png
+*.npz
+
+# Editor / local tool settings
+.vscode/
+.idea/
+.claude/settings.local.json
