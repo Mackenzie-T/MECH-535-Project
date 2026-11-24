@@ -1,4 +1,11 @@
 MECH 535 Project - Axial Rotor Throughflow Solver
+
+Authored by:
+Del Raso, Sofia 261182062
+Finch, Max 261083266
+Troffe, Mackenzie 261178333
+Rumohr, Liam 261155845
+
 ==================================================
 
 A 2D (axial-radial) throughflow solver for the design of an axial-flow rotor.
